@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 60px 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+#search-button {
+  padding: 10px 20px;
+  background-color: #138065;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.search-result {
+  margin-bottom: 60px;
+  width: 30%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.search-result img {
+  width: 100%;
+  height: 300px;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img {
+  opacity: 0.8;
+}
+.search-result a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+}
+#show-more-button {
+  padding: 10px 20px;
+  background-color: #008cba;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  /* box-shadow: 0 0 6px rgb(0, 0, 0, 0.2); */
+  display: block;
+  cursor: pointer;
+  margin: 30px auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search-results {
+    padding: 20px;
+  }
+  .search-result {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .search-results {
+    padding: 20px;
+  }
+  .search-result {
+    width: 100%;
+  }
+}
